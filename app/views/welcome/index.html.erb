@@ -11,7 +11,7 @@
   <!-- drop down, country list -->
   <div>
     <select onchange="ChooseCountry(this)">
-      <option value="USD" selected="selected">United States Dollars</option>
+      <option value="USD" selected="selected">United States Dollars<span class="work-please!"><%= @currency['USD']%></span></option>
       <option value="EUR">Euro</option>
       <option value="GBP">United Kingdom Pounds</option>
       <option value="DZD">Algeria Dinars</option>
@@ -103,7 +103,7 @@
 
      <!-- displays the conversion -->
      <div class="exchange-rate">
-        <p><%= @currency['USD'] %></p>
+        <p></p>
     </div>
    </div><!--/currency-->
  </div>

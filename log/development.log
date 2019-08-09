@@ -30802,3 +30802,662 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 1276ms (Views: 931.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-09 12:14:03 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lcaton/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 846ms (Views: 411.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:19:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 364ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:19:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 391ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:19:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 362ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:23:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 386ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:23:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (291.1ms)
+Completed 500 Internal Server Error in 634ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `money' for #<#<Class:0x007fb67434b1b0>:0x007fb6794dabc0>):
+    103: 
+    104:      <!-- displays the conversion -->
+    105:      <div class="exchange-rate">
+    106:         <p><%= @currency[money] %></p>
+    107:     </div>
+    108:    </div><!--/currency-->
+    109:  </div>
+  
+app/views/welcome/index.html.erb:106:in `_app_views_welcome_index_html_erb__2425135993421531885_70210847955660'
+Started GET "/" for ::1 at 2019-08-09 12:24:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (308.1ms)
+Completed 500 Internal Server Error in 724ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `money' for #<#<Class:0x007fb67434b1b0>:0x007fb6757312b0>):
+    103: 
+    104:      <!-- displays the conversion -->
+    105:      <div class="exchange-rate">
+    106:         <p><%= money %></p>
+    107:     </div>
+    108:    </div><!--/currency-->
+    109:  </div>
+  
+app/views/welcome/index.html.erb:106:in `_app_views_welcome_index_html_erb__2425135993421531885_70210815626820'
+Started GET "/" for ::1 at 2019-08-09 12:25:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 378ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:25:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 363ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:25:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 415ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:27:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 393ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:14: syntax error, unexpected '<'
+eeze;@output_buffer.append=( <option value="USD" selected="s
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+( <option value="USD" selected="selected">United States Doll
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:14: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ected="selected">United States Dollars</option> );@output_bu
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:15: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:15: unmatched close parenthesis: /option> );@output_buffer.safe_append='
+      <option value="EUR">Euro</i
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:16: syntax error, unexpected '<'
+      <option value="GBP">United King
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:16: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ion value="GBP">United Kingdom Pounds</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:17: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:18: syntax error, unexpected '<'
+      <option value="ARP">Argentina P
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:18: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="ARP">Argentina Pesos</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:19: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:20: syntax error, unexpected '<'
+      <option value="ATS">Austria Sch
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:20: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+value="ATS">Austria Schillings</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:21: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:22: syntax error, unexpected '<'
+      <option value="BBD">Barbados Do
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:22: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+n value="BBD">Barbados Dollars</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:23: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:24: syntax error, unexpected '<'
+      <option value="BMD">Bermuda Dol
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:24: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="BMD">Bermuda Dollars</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:25: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:26: syntax error, unexpected '<'
+      <option value="BGL">Bulgaria Le
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:26: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ption value="BGL">Bulgaria Lev</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:27: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:28: syntax error, unexpected '<'
+      <option value="CLP">Chile Pesos
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:28: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+option value="CLP">Chile Pesos</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:29: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:30: syntax error, unexpected '<'
+      <option value="CYP">Cyprus Poun
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:30: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+tion value="CYP">Cyprus Pounds</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:31: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:32: syntax error, unexpected '<'
+      <option value="DKK">Denmark Kro
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ion value="DKK">Denmark Kroner</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:33: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:34: syntax error, unexpected '<'
+      <option value="XCD">Eastern Car
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:34: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ value="XCD">Eastern Caribbean Dollars</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:35: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:36: syntax error, unexpected '<'
+      <option value="FJD">Fiji Dollar
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:36: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ption value="FJD">Fiji Dollars</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:37: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:38: syntax error, unexpected '<'
+      <option value="FRF">France Fran
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:38: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+tion value="FRF">France Francs</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:39: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:40: syntax error, unexpected '<'
+      <option value="XAU">Gold Ounces
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:40: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+option value="XAU">Gold Ounces</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:41: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:42: syntax error, unexpected '<'
+      <option value="HKD">Hong Kong D
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:42: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ <option value="HKD">Hong Kong Dollars</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:43: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:44: syntax error, unexpected '<'
+      <option value="ISK">Iceland Kro
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:44: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+tion value="ISK">Iceland Krona</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:45: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:46: syntax error, unexpected '<'
+      <option value="IDR">Indonesia R
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:46: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+n value="IDR">Indonesia Rupiah</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:47: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:48: syntax error, unexpected '<'
+      <option value="ILS">Israel New 
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:48: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+<option value="ILS">Israel New Shekels</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:49: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:50: syntax error, unexpected '<'
+      <option value="JMD">Jamaica Dol
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:50: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="JMD">Jamaica Dollars</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:51: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:52: syntax error, unexpected '<'
+      <option value="JOD">Jordan Dina
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:52: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ption value="JOD">Jordan Dinar</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:53: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:54: syntax error, unexpected '<'
+      <option value="LBP">Lebanon Pou
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:54: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ion value="LBP">Lebanon Pounds</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:55: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:56: syntax error, unexpected '<'
+      <option value="MYR">Malaysia Ri
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:56: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+n value="MYR">Malaysia Ringgit</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:57: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:58: syntax error, unexpected '<'
+      <option value="NLG">Netherlands
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:58: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+lue="NLG">Netherlands Guilders</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:59: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:60: syntax error, unexpected '<'
+      <option value="NOK">Norway Kron
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:60: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+tion value="NOK">Norway Kroner</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:61: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:62: syntax error, unexpected '<'
+      <option value="XPD">Palladium O
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:62: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+n value="XPD">Palladium Ounces</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:63: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:64: syntax error, unexpected '<'
+      <option value="XPT">Platinum Ou
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:64: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="XPT">Platinum Ounces</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:65: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:66: syntax error, unexpected '<'
+      <option value="PTE">Portugal Es
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:66: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="PTE">Portugal Escudo</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:67: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:68: syntax error, unexpected '<'
+      <option value="RUR">Russia Rubl
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:68: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+tion value="RUR">Russia Rubles</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:69: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:70: syntax error, unexpected '<'
+      <option value="XAG">Silver Ounc
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:70: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+tion value="XAG">Silver Ounces</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:71: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:72: syntax error, unexpected '<'
+      <option value="SKK">Slovakia Ko
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:72: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="SKK">Slovakia Koruna</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:73: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:74: syntax error, unexpected '<'
+      <option value="KRW">South Korea
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:74: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+option value="KRW">South Korea Won</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:75: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:76: syntax error, unexpected '<'
+      <option value="XDR">Special Dra
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:76: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="XDR">Special Drawing Right (IMF)</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:77: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:78: syntax error, unexpected '<'
+      <option value="SEK">Sweden Kron
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:78: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ption value="SEK">Sweden Krona</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:79: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:80: syntax error, unexpected '<'
+      <option value="TWD">Taiwan Doll
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:80: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ion value="TWD">Taiwan Dollars</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:81: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:82: syntax error, unexpected '<'
+      <option value="TTD">Trinidad an
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:83: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:84: syntax error, unexpected '<'
+      <option value="VEB">Venezuela B
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:84: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+ value="VEB">Venezuela Bolivar</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:85: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:86: syntax error, unexpected '<'
+      <option value="EUR">Euro</optio
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:87: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:88: syntax error, unexpected '<'
+      <option value="XDR">Special Dra
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:88: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="XDR">Special Drawing Right (IMF)</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:89: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:90: syntax error, unexpected '<'
+      <option value="XAU">Gold Ounces
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:90: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+option value="XAU">Gold Ounces</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:91: unknown regexp options - pt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:92: syntax error, unexpected '<'
+      <option value="XPT">Platinum Ou
+       ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:92: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+on value="XPT">Platinum Ounces</option>
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:93: unknown regexp options - lct
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:95: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:100: unknown regexp option - p
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:102: syntax error, unexpected '<'
+     </div>
+      ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:106: unknown regexp option - p
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:107: syntax error, unexpected '<'
+    </div>
+     ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:108: unknown regexp options - dv
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:108: syntax error, unexpected '<'
+   </div><!--/currency-->
+          ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:109: unknown regexp options - dv
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:112: syntax error, unexpected '<'
+</article>
+ ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:115: unknown regexp options - javacrpt
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:115: syntax error, unexpected tSTRING_BEG, expecting ')'
+<script type="text/javascript">
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:118: syntax error, unexpected tIDENTIFIER, expecting ')'
+etElementById("selectedCountry").value = \'USD\';
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:122: syntax error, unexpected tIDENTIFIER, expecting ')'
+etElementById("selectedCountry").value = data.value;
+                              ^
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:122: unterminated string meets end of file
+/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:122: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/welcome/index.html.erb:14: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/welcome/index.html.erb:14: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:15: unknown regexp options - pt
+app/views/welcome/index.html.erb:15: unmatched close parenthesis: /option> );@output_buffer.safe_append='
+app/views/welcome/index.html.erb:16: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:16: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:17: unknown regexp options - pt
+app/views/welcome/index.html.erb:18: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:18: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:19: unknown regexp options - pt
+app/views/welcome/index.html.erb:20: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:20: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:21: unknown regexp options - pt
+app/views/welcome/index.html.erb:22: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:22: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:23: unknown regexp options - pt
+app/views/welcome/index.html.erb:24: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:24: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:25: unknown regexp options - pt
+app/views/welcome/index.html.erb:26: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:26: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:27: unknown regexp options - pt
+app/views/welcome/index.html.erb:28: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:28: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:29: unknown regexp options - pt
+app/views/welcome/index.html.erb:30: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:30: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:31: unknown regexp options - pt
+app/views/welcome/index.html.erb:32: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:33: unknown regexp options - pt
+app/views/welcome/index.html.erb:34: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:34: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:35: unknown regexp options - pt
+app/views/welcome/index.html.erb:36: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:36: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:37: unknown regexp options - pt
+app/views/welcome/index.html.erb:38: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:38: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:39: unknown regexp options - pt
+app/views/welcome/index.html.erb:40: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:40: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:41: unknown regexp options - pt
+app/views/welcome/index.html.erb:42: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:42: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:43: unknown regexp options - pt
+app/views/welcome/index.html.erb:44: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:44: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:45: unknown regexp options - pt
+app/views/welcome/index.html.erb:46: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:46: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:47: unknown regexp options - pt
+app/views/welcome/index.html.erb:48: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:48: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:49: unknown regexp options - pt
+app/views/welcome/index.html.erb:50: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:50: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:51: unknown regexp options - pt
+app/views/welcome/index.html.erb:52: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:52: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:53: unknown regexp options - pt
+app/views/welcome/index.html.erb:54: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:54: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:55: unknown regexp options - pt
+app/views/welcome/index.html.erb:56: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:56: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:57: unknown regexp options - pt
+app/views/welcome/index.html.erb:58: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:58: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:59: unknown regexp options - pt
+app/views/welcome/index.html.erb:60: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:60: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:61: unknown regexp options - pt
+app/views/welcome/index.html.erb:62: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:62: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:63: unknown regexp options - pt
+app/views/welcome/index.html.erb:64: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:64: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:65: unknown regexp options - pt
+app/views/welcome/index.html.erb:66: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:66: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:67: unknown regexp options - pt
+app/views/welcome/index.html.erb:68: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:68: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:69: unknown regexp options - pt
+app/views/welcome/index.html.erb:70: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:70: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:71: unknown regexp options - pt
+app/views/welcome/index.html.erb:72: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:72: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:73: unknown regexp options - pt
+app/views/welcome/index.html.erb:74: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:74: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:75: unknown regexp options - pt
+app/views/welcome/index.html.erb:76: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:76: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:77: unknown regexp options - pt
+app/views/welcome/index.html.erb:78: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:78: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:79: unknown regexp options - pt
+app/views/welcome/index.html.erb:80: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:80: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:81: unknown regexp options - pt
+app/views/welcome/index.html.erb:82: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:83: unknown regexp options - pt
+app/views/welcome/index.html.erb:84: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:84: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:85: unknown regexp options - pt
+app/views/welcome/index.html.erb:86: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:87: unknown regexp options - pt
+app/views/welcome/index.html.erb:88: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:88: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:89: unknown regexp options - pt
+app/views/welcome/index.html.erb:90: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:90: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:91: unknown regexp options - pt
+app/views/welcome/index.html.erb:92: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:92: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:93: unknown regexp options - lct
+app/views/welcome/index.html.erb:95: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:100: unknown regexp option - p
+app/views/welcome/index.html.erb:102: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:106: unknown regexp option - p
+app/views/welcome/index.html.erb:107: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:108: unknown regexp options - dv
+app/views/welcome/index.html.erb:108: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:109: unknown regexp options - dv
+app/views/welcome/index.html.erb:112: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:115: unknown regexp options - javacrpt
+app/views/welcome/index.html.erb:115: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/welcome/index.html.erb:118: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/welcome/index.html.erb:122: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/welcome/index.html.erb:122: unterminated string meets end of file
+app/views/welcome/index.html.erb:122: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for ::1 at 2019-08-09 12:27:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 345ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/lcaton/bloc/Venture/app/views/welcome/index.html.erb:14: syntax error, unexpected tSTRING_BEG, expecting ')'
+put_buffer.append=( @currency'USD');@output_buffer.safe_appe
+                              ^):
+  
+app/views/welcome/index.html.erb:14: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/" for ::1 at 2019-08-09 12:28:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 364ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:28:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 398ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:29:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 407ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:29:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 359ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:30:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 393ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:31:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 361ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:31:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 356ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:32:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 364ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:33:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 415ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:33:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 361ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:34:04 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 359ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:34:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 357ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 12:34:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 400ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-09 14:28:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 445ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
