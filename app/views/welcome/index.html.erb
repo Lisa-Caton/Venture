@@ -9,7 +9,6 @@
 
   <!-- drop down, country list -->
   <div>
-
     <select id="money-rate" onchange="ChooseCountry(this)">
       <% @currency.each do |currencyCode, amount| %>
          <option value="<%= currencyCode %>"
@@ -19,25 +18,22 @@
 
        <% end %>
     </select>
-
   <!--Example code output
     <option value="USD" selected="selected">United States Dollars</option>
     <option value="USD">United States Dollars</option>
     -->
-
   </div>
 
    <div class="currency">
      <div class="country">
        <!-- USD grabs other country and converts -->
        <p>USD > <input id="selectedCountry"></p>
-     </div>
+     </div><!--/country-->
 
      <!-- displays the conversion -->
-     <div id="exchange-rate">
-    </div>
+     <div id="exchange-rate"></div>
    </div><!--/currency-->
- </div>
+
 
 
 </article>
@@ -47,7 +43,7 @@
   /* this is filling the input with a default onload*/
   window.onload = function(){
     document.getElementById('selectedCountry').value = 'USD';
-    document.getElementById('exchange-rate').innerHTML = 'handle: 1 | name: United States';
+    document.getElementById('exchange-rate').innerHTML = '$1';
   }
 
   function ChooseCountry(data) {
@@ -61,7 +57,8 @@
     var selectedOption = this.options[this.selectedIndex];
     var handle = selectedOption.getAttribute('data-handle');
     var label = selectedOption.label;
-    exchangeRate.innerHTML = "handle: " + handle + " | name: " + label;
+    exchangeRate.innerHTML = "$" + handle;
+    // exchangeRate.innerHTML = "handle: " + handle + " | name: " + label;
   });
 
 </script>

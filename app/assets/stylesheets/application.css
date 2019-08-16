@@ -15,7 +15,7 @@
  */
 
 html, body {
-  background: #000;
+  background: #000!important;
   font-family: "Open Sans";
   height: 100%;
   margin: 0;
