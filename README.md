@@ -4,9 +4,9 @@ An exchange rate application, which allows a user to calculate the exchange rate
 
 The API pulles from exchangerate-api.com.
 
-<img scr="images/IDR.png" width="100">
-<img scr="images/THB.png" width="100">
-<img scr="images/EUR.png" width="100">
+<img src="images/IDR.png" width="100">
+<img src="images/THB.png" width="100">
+<img src="images/EUR.png" width="100">
 
 ![screenshot of IDR](images/IDR.png)
 ![screenshot of THB](images/THB.png)
