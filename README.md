@@ -7,6 +7,7 @@ The API pulles from exchangerate-api.com.
 <img scr="images/IDR.png" width="200"/>
 <img scr="images/THB.png" width="200"/>
 <img scr="images/EUR.png" width="200"/>
+
 ![screenshot of IDR](images/IDR.png)
 ![screenshot of THB](images/THB.png)
 ![screenshot of EUR](images/EUR.png)
