@@ -1,0 +1,40 @@
+
+------------------------------------
+ To suppress logs:
+------------------------------------
+
+
+Step 1: uninstalled bootsnap
+  + gem uninstall <gem-name>
+  + gem uninstall bootsnap
+
+  **removes tmp/bootsnap (a million files!)
+
+
+Step 2a: Replace development text
+(yours) | Folder path: 'config/environments/development.rb
+(clean) | Use this text to replace: https://github.com/heroku/ruby-rails-sample/blob/master/config/environments/development.rb
+
+
+Step 2b: Add a single configuration to bottom of new text
+```
+    # config/environments/development.rb
+    Rails.application.configure do
+      config.logger = ActiveSupport::Logger.new(nil)
+    end
+```
+
+
+Step 3: Remove all untracked files and logs**
+  + git stash save --keep-index --include-untracked
+  + Research I: "How do I discard unstaged changes in Git?" | https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git
+
+  + Research II: "How to remove files from git staging area?" | https://stackoverflow.com/questions/19730565/how-to-remove-files-from-git-staging-area/39454637
+  + git reset HEAD
+
+
+Step 4:
+  + Stop the old terminal
+  + Open new terminal, run rails server: 'rails s'
+  + run 'git status'
+  + Clean!!!!!!!!!!!!
