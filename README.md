@@ -1,5 +1,5 @@
 # Venture
-_**Venture is an exchange rate application.**_
+Venture is an **exchange rate** application.
 
 This App allows a user to view in real-time the exchange rate from any country, against the base currency of the United States dollar amount.
 
