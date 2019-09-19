@@ -49,14 +49,18 @@ The API pulles from exchangerate-api.com.
 ## Ways to Contribute
 + _Have you found a new feature travelers could use? Build & submit it!_
 
-### Version 0.1
+## Version 0.1
 + This application is ran by (1) forking the project, (2) using the rails server, and (3) open a browser to view
 + The **goal** is to make this project into a swiss army knife for traveler's!
 + The **vision** is to have this app available to download from the mobile store, and to be uploaded to the user's personal device.
 
-### Releases
+## Releases
 + version 0.1 - self maintaining application, whose data is pulled via API, must run rails server to power
 
-### Code of Conduct
-People are bound to disagree. Please keep disagreements civil and productive. Contributers are apart of a special commuity, and we all lean on eachother to make our ideas stronger. Support eachother. Don't be mean to one another, and use contructive critizism.
+## Relative links
+[License for this project](docs/License.md)
+
+[Code of Conduct for this project](docs/Code_of_Conduct.md)
+
+
 
