@@ -1,11 +1,11 @@
 # Venture
 Venture is an **exchange rate** application.
 
-This App allows a user to view in real-time the exchange rate from any country, against the base currency of the United States dollar amount.
+This application allows users to view in real-time the exchange rate from any country, against the base currency of the United States dollar amount.
 
 <img src="images/ExRateScreenshots.png" alt="screenshot of rates" width="946">
 
-The API pulles from exchangerate-api.com.
+The API pulls from exchangerate-api.com.
 
 ## How it works
 + The appication's controller is where the magic happens.
