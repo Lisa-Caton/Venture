@@ -43,7 +43,7 @@ The API pulles from exchangerate-api.com.
 + Inside the terminal, locate the project's folder
 + Next, run the application by starting the rails server via command line: 'rails s'
 + Open a browser window to: http://localhost:3000/
-+ Scroll passed the introductory title, to the **exchange rate** section
++ Scroll past the introductory title, to the **exchange rate** section
 + Choose any supported country from the drop-down menu to view the exchange rate against the USD base rate.
 
 ## Ways to Contribute
