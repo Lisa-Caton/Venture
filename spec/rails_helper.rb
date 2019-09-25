@@ -1,4 +1,5 @@
 # require database cleaner and shoulda-matchers at the top level to work with RSpec
+require File.expand_path('../../config/environment', __FILE__)
 require 'database_cleaner'
 require 'shoulda-matchers'
 require 'factory_bot'
