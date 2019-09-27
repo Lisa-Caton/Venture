@@ -1,48 +1,11 @@
-#spec/controller/api/welcome_controller_spec.rb
-
 require 'rails_helper'
 
-RSpec.describe WelcomeController do
-
+RSpec.describe WelcomeController, :type => :controller do
   describe '#index' do
-    it 'tests the url' do
-      url = 'https://api.exchangerate-api.com/v4/latest/USD'
-      expected = 'https://api.exchangerate-api.com/v4/latest/USD'
-      expect(url).to eq expected
-    end
 
-    it 'tests the uri' do
-      url = 'https://api.exchangerate-api.com/v4/latest/USD'
-      uri = URI(url)
-      expected = URI(url)
-      expect(uri).to eq expected
-    end
-
-    it 'tests the response' do
-      url = 'https://api.exchangerate-api.com/v4/latest/USD'
-      uri = URI(url)
-      response = Net::HTTP.get(uri)
-      expected = Net::HTTP.get(uri)
-      expect(response).to eq expected
-    end
-
-    it 'tests the response object' do
-      url = 'https://api.exchangerate-api.com/v4/latest/USD'
-      uri = URI(url)
-      response = Net::HTTP.get(uri)
-      response_obj = JSON.parse(response)
-      expected = JSON.parse(response)
-      expect(response_obj).to eq expected
-    end
-
-    it 'parses the response using rates only' do
-      url = 'https://api.exchangerate-api.com/v4/latest/USD'
-      uri = URI(url)
-      response = Net::HTTP.get(uri)
-      response_obj = JSON.parse(response)
-      @currency = response_obj['rates']
-      expected = response_obj['rates']
-      expect(@currency).to eq expected
+    it 'the landing page returns correctly' do
+      url = 'welcome#index'
+      expect(url).to eq('welcome#index')
     end
 
     it 'tests that the country-code matches the correct country!' do
@@ -102,12 +65,8 @@ RSpec.describe WelcomeController do
       }
       @currencyCodeToNameHash['AED'] = 'United Arab Emirates'
       expected = 'United Arab Emirates'
-      expect(@currencyCodeToNameHash['AED']).to eq expected
+      expect(@currencyCodeToNameHash['AED']).to eq(expected)
     end
 
   end
 end
-
-
-
-
