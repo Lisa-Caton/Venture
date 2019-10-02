@@ -3,9 +3,16 @@ require 'rails_helper'
 RSpec.describe WelcomeController, :type => :controller do
   describe '#index' do
 
-    it 'the landing page returns correctly' do
-      url = 'welcome#index'
-      expect(url).to eq('welcome#index')
+# PASSES!
+    # it 'renders the landing page returns correctly' do
+    #    get :index
+    #   expect(response).to render_template("index")
+    # end
+
+# PASSES!
+    it 'renders the landing page returns correctly' do
+       get :index
+      expect(response).to render_template('welcome/index')
     end
 
     it 'tests that the country-code matches the correct country!' do
@@ -63,10 +70,11 @@ RSpec.describe WelcomeController, :type => :controller do
         'VND' => 'Vietnam',
         'ZAR' => 'South Africa'
       }
-      @currencyCodeToNameHash['AED'] = 'United Arab Emirates'
+
       expected = 'United Arab Emirates'
       expect(@currencyCodeToNameHash['AED']).to eq(expected)
     end
+
 
   end
 end
