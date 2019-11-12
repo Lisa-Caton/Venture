@@ -8,7 +8,7 @@ This application allows users to view in real-time the exchange rate from any co
 The API pulls from exchangerate-api.com.
 
 ## How it works
-+ The appication's controller is where the magic happens.
++ The Application's controller is where the magic happens.
 + An API, gathers in hash-form all supported countries, along with their exchange rates
 
 ## Example of the API
@@ -39,7 +39,7 @@ The API pulls from exchangerate-api.com.
 
 ## Installation
 + Fork Project!!
-+ Open terminal 
++ Open terminal
 + Inside the terminal, locate the project's folder
 + Next, run the application by starting the rails server via command line: 'rails s'
 + Open a browser window to: http://localhost:3000/
@@ -61,6 +61,3 @@ The API pulls from exchangerate-api.com.
 [License for this project](docs/License.md)
 
 [Code of Conduct for this project](docs/Code_of_Conduct.md)
-
-
-
